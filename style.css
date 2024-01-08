@@ -348,16 +348,7 @@ section{
     position: relative;
 }
 
-.benefits_img *:not(:first-child)::after{
-        content: " ";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 150px;
-        height: 20px;
-        background-color: red;
-        z-index: 50;
-}
+
 
 .phone1{
     margin: 1rem;
@@ -371,16 +362,6 @@ section{
     /* border: 1px solid red; */
     position: relative;
 
-}
-
-#phone2::after{
-        content: " ";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 150px;
-        height: 20px;
-        z-index: 50;
 }
 
 .diff_product{
@@ -1000,11 +981,14 @@ footer article:last-child{
     margin: 1rem 0;
     min-width: 0;
     width: 90%;
+    border: 1px solid red;
+    height: 450px;
+
 }
 
 .price_types article:nth-child(2){
     
-    padding-bottom: 1.5rem;
+    /* padding-bottom: 2rem; */
 }
 .price_types article ul li{
     text-align: left;
