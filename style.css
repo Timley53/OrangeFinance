@@ -7,7 +7,11 @@ body{
     background-color: rgba(0, 0, 0, 0.946);
     font-family: 'Poppins', sans-serif;
     color: orange;
+    padding: 0;
+    margin: 0;
 }
+
+
 
 button{
 
@@ -168,9 +172,7 @@ section{
 }
 
 .input_btn{
-    width: 70%;
-    min-width: 448px;
-    max-width: 448px;
+    width: 350px;
     border: 1px solid orange;
     border-radius: 20px;
     display: flex;
@@ -180,14 +182,20 @@ section{
 .input_btn input{
     border: 0;
     background-color: transparent;
-    width: 70%;
-    color: grey;
+    width: 60%;
+    color: white;
     padding: 5px 5px 5px 7px;
+
 }
 .input_btn input:focus-within{
     outline: 0;
 }
+
+.input_btn > input::placeholder{
+    color: grey;
+}
 .input_btn button{
+    width: calc(350px - 60%);
     padding: 10px 15px;
     font-size: medium;
     background-color: orange;
@@ -324,6 +332,7 @@ section{
     text-decoration: none;
     background-color: orange;
     border-radius: 1.7rem;
+    color: black;
 }
 
 .benefits_img{
@@ -705,11 +714,11 @@ footer article:last-child{
     html{
         width: 100%;
     }
+    
     body{
         margin: 0;
         padding: 0;
         width: 100%;
-        /* background-color: antiquewhite; */
     }
     nav {
         display: flex;
@@ -730,7 +739,7 @@ footer article:last-child{
     
     .logo_menu{
         width: 96%;
-        padding: .8rem;
+        padding: .4rem;
         display: flex;
         justify-content: space-between;
         z-index: 100;
@@ -830,7 +839,7 @@ footer article:last-child{
     }
 
     .manage{
-        width: 99%;
+        width: 98%;
         padding: 0.5rem;
     }
 
@@ -852,14 +861,21 @@ footer article:last-child{
 
     .input_btn{
         width: 95%;
-        min-width: 0;
-        max-width: 80%;
+        min-width: auto;
+        max-width: auto;
         margin-top: 3.5rem;
 
     }
-
+    
     .input_btn input{
-        width: calc(100% - 134px);
+        width: 70%;
+        font-size: small;
+    }
+    .input_btn button{
+        width: calc(90% -70%);
+        font-size: .8rem;
+        padding: 10px 5px;
+
     }
 
     .phone_mockup{
@@ -978,12 +994,17 @@ footer article:last-child{
 .price_types{
     flex-direction: column;
     align-items: center;
-
+    
 }
 .price_types article{
     margin: 1rem 0;
     min-width: 0;
     width: 90%;
+}
+
+.price_types article:nth-child(2){
+    
+    padding-bottom: 1.5rem;
 }
 .price_types article ul li{
     text-align: left;
@@ -1036,10 +1057,37 @@ footer article:last-child{
       
     }
     
-
+    
     footer article:last-child{
         width: 100%;
         font-size: medium;
     }
 
+    .subscribe{
+        display: flex;
+        border: 1px solid;
+        border-radius: 1rem;
+        width: 90%;
+        
+    }
+    .subscribe input{
+        border-radius: 1rem;
+        padding: .5rem ;
+        background-color: transparent;
+        border: 0;
+        width: 68%;
+        color: orange;
+    }
+    .subscribe input:focus-within{
+        outline: 0;
+    }
+    .subscribe button{
+        border-radius: 1rem;
+        border: 0;
+        font-size: .9rem;
+        width: calc(95% - 68%);
+        background-color: orange;
+        color: white;
+    }
+    
 }
